@@ -53,6 +53,7 @@ public class App {
     public void ausleihen(int kNummer, int mNummer){
         for (Kundendatenbank kundendatenbank : getKunden()) {
             if(kNummer == 1 && mNummer == 1);
+            System.out.println("Er darf ausleihen");
 
         }
     }
