@@ -6,7 +6,7 @@ public class App {
 
 
     
-    static ArrayList<Kundendatenbank>Kunden;
+     ArrayList<Kundendatenbank>Kunden;
     static ArrayList<Mitarbeiter>mitarbeiterinnen;
     static ArrayList<Medien>multimedia;
     
@@ -14,16 +14,16 @@ public class App {
         
     }
     
-    public static void createKundendb(){
+    public  void createKundendb(){
         Kunden.add(new Kundendatenbank(1, "Hans", "Peter", 19));
         Kunden.add(new Kundendatenbank(2, "Laura", "Stern", 25));
         Kunden.add(new Kundendatenbank(3, "Wurst", "Markt", 18));
     }
     
-    public static void setKunden(ArrayList<Kundendatenbank> kunden) {
+    public  void setKunden(ArrayList<Kundendatenbank> kunden) {
         Kunden = kunden;
     }
-    public static ArrayList<Kundendatenbank> getKunden() {
+    public ArrayList<Kundendatenbank> getKunden() {
         return Kunden;
     }
 
@@ -52,10 +52,11 @@ public class App {
 
     public void ausleihen(int kNummer, int mNummer){
         for (Kundendatenbank kundendatenbank : getKunden()) {
-            if(kNummer == 1 && mNummer == 1);
-            System.out.println("Er darf ausleihen");
-
+            if(kNummer == 1){
+                System.out.println("Der junge darf ausleihen");
+            }
         }
     }
-    
+    //ich habe eine Vorstellung was ich machen will aber ich weiß nicht wie ich
+    //das aus dem in de
 }
