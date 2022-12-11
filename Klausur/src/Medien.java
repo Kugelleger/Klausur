@@ -1,4 +1,4 @@
-public class Medien {
+public  class Medien {
     
     String titel;
     int FSK;
@@ -12,6 +12,7 @@ public class Medien {
         setVerliehen(verliehen);
     }
 
+    
     public String getTitel() {
         return titel;
     }

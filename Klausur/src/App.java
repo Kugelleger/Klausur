@@ -6,21 +6,28 @@ public class App {
 
 
     
-     ArrayList<Kundendatenbank>Kunden;
+    static ArrayList<Kundendatenbank>Kunden;
     static ArrayList<Mitarbeiter>mitarbeiterinnen;
     static ArrayList<Medien>multimedia;
     
     public static void main(String[] args) throws Exception {
-        
+        setMultimedia(new ArrayList<Medien>());
+        createMitarbeiterdb();
+        createMultiMediadb();
+        createKundendb();
+        for (Medien multiMedia : getMultimedia()) {
+            System.out.println(multimedia);
+        }
     }
+
     
-    public  void createKundendb(){
+    public static  void createKundendb(){
         Kunden.add(new Kundendatenbank(1, "Hans", "Peter", 19));
         Kunden.add(new Kundendatenbank(2, "Laura", "Stern", 25));
         Kunden.add(new Kundendatenbank(3, "Wurst", "Markt", 18));
     }
     
-    public  void setKunden(ArrayList<Kundendatenbank> kunden) {
+    public static  void setKunden(ArrayList<Kundendatenbank> kunden) {
         Kunden = kunden;
     }
     public ArrayList<Kundendatenbank> getKunden() {
@@ -50,13 +57,11 @@ public class App {
     return multimedia;
     }
 
-    public void ausleihen(int kNummer, int mNummer){
-        for (Kundendatenbank kundendatenbank : getKunden()) {
-            if(kNummer == 1){
-                System.out.println("Der junge darf ausleihen");
-            }
+    public void ausleihen(){
+              
         }
-    }
+            }
+        
+    
     //ich habe eine Vorstellung was ich machen will aber ich weiß nicht wie ich
     //das aus dem in de
-}
